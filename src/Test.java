@@ -2,9 +2,9 @@ import java.util.InputMismatchException;
 
 public class Test {
     public static void main(String[] args) {
-        Builder builder = new Builder();
+        Builder PersonBuilder = new Builder();
         try {
-            Person person = builder.builder();
+            Person person = PersonBuilder.build();
             System.out.println(person.toString());
         } catch (NameUndefinedException e) {
             System.err.println("Zła nazwa");

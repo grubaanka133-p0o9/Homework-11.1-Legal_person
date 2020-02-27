@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Builder {
-    public Person builder() throws NameUndefinedException, IncorrectAgeException {
+    public Person build() throws NameUndefinedException, IncorrectAgeException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Imię: ");
         String firstName = scanner.nextLine();
